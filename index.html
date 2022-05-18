@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,30 +51,30 @@
         <div class="w3-modal"
              :class="[dialogShowed ? 'display-block' : 'display-none']">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="min-width: 350px; max-width: 600px;">
-                <header class="w3-container w3-blue w3-center">
+                <header class="w3-container w3-black w3-center">
                     <span @click="hideDialog"
-                          class="w3-button w3-display-topright w3-xxlarge w3-blue w3-hover-blue w3-hover-text-black"
-                          style="padding: 0 10px 0 0;"
-                          title="Resume Test">
+                          class="w3-button w3-display-topright w3-xxlarge w3-black w3-hover-white w3-hover-text-black"
+                          style="padding: 0px 0px 0 0;"
+                          title="made by kq <3">
                     &times;
                     </span>
                     <h2>Schulte Table Test</h2>
                 </header>
 
-                <div class="w3-bar w3-light-grey w3-border-bottom">
+                <div class="w3-bar w3-black w3-border-bottom">
                     <button class="tablink w3-bar-item w3-button"
                             @click="changeDialogTab('settings')"
-                            :class="[settingsTabVisible  ? 'w3-indigo w3-text-white w3-hover-indigo' : 'w3-light-grey w3-hover-white']">
+                            :class="[settingsTabVisible  ? 'w3-white w3-text-black w3-hover-black' : 'w3-black w3-hover-white']">
                         Settings
                     </button>
                     <button class="tablink w3-bar-item w3-button"
                             @click="changeDialogTab('stats')"
-                            :class="[statsTabVisible ? 'w3-indigo w3-text-white w3-hover-indigo' : 'w3-light-grey w3-hover-white']">
+                            :class="[statsTabVisible ? 'w3-white w3-text-black w3-hover-black' : 'w3-black w3-hover-white']">
                         Stats
                     </button>
                     <button class="tablink w3-bar-item w3-button"
                             @click="changeDialogTab('mousemap')"
-                            :class="[mousemapTabVisible ? 'w3-indigo w3-text-white w3-hover-indigo' : 'w3-light-grey w3-hover-white']">
+                            :class="[mousemapTabVisible ? 'w3-white w3-text-black w3-hover-black' : 'w3-black w3-hover-white']">
                         Mouse Map
                     </button>
                 </div>
@@ -258,9 +262,9 @@
                     </canvas>
                 </div>
 
-                <footer class="w3-container w3-light-grey w3-center">
+                <footer class="w3-container w3-white w3-center">
                     <button type="button"
-                            class="w3-btn w3-indigo w3-text-white w3-xlarge"
+                            class="w3-btn w3-white w3-text-black w3-xlarge w3-hover-black w3-hover-text-white"
                             style="width: 80%; margin: 10px;"
                             @click="hideDialog(); startGame()"
                             ref="btn">

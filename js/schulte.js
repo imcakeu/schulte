@@ -10,7 +10,7 @@ function Cell(number) {
         'spin-right': false,
         'spin-left': false
     };
-    this.colorStyle = 'color: black';
+    this.colorStyle = 'color: white';
 }
 
 function Group (size) {
